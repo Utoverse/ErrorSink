@@ -18,6 +18,7 @@ public class ServerInformation extends EventEditor {
 		// Server information
 		builder.withTag("API", serverVersion);
 		builder.withExtra("Online players", ErrorSink.getPlugin().getOnlinePlayers());
+		builder.withExtra("Online player details", ErrorSink.getPlugin().getOnlinePlayerLocation());
 		ErrorSink.getPlugin().addExtraData(builder);
 	}
 

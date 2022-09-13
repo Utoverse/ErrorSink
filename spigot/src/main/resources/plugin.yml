@@ -5,6 +5,7 @@ version: "${project.version}"
 author: NLThijs48
 website: http://github.com/NLthijs48/ErrorSink
 load: STARTUP
+api-version: 1.19
 # Ask to load before commonly used plugin to try loading as first and disabling last
 loadbefore:
   - Vault

@@ -29,21 +29,21 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- Bukkit API -->
+        <!-- Spigot API -->
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.8-R0.1-SNAPSHOT</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.19.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
-
-        <!-- Bstats -->
-        <dependency>
-            <groupId>org.bstats</groupId>
-            <artifactId>bstats-bukkit</artifactId>
-            <version>1.1</version>
-        </dependency>
+        <!-- Bukkit API -->
+<!--        <dependency>-->
+<!--            <groupId>org.bukkit</groupId>-->
+<!--            <artifactId>bukkit</artifactId>-->
+<!--            <version>1.8-R0.1-SNAPSHOT</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
 
     </dependencies>
 
@@ -173,11 +173,6 @@
                         <relocation>
                             <pattern>io.sentry</pattern>
                             <shadedPattern>me.wiefferink.errorsink.shaded.sentry</shadedPattern>
-                        </relocation>
-                        <!-- Relocate bstats -->
-                        <relocation>
-                            <pattern>org.bstats</pattern>
-                            <shadedPattern>me.wiefferink.errorsink.shaded.bstats</shadedPattern>
                         </relocation>
                     </relocations>
                     <artifactSet>

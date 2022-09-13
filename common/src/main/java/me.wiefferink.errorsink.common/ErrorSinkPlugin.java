@@ -8,6 +8,7 @@ import org.apache.logging.log4j.core.LogEvent;
 import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
+import java.util.TreeMap;
 
 public interface ErrorSinkPlugin {
 
@@ -48,6 +49,10 @@ public interface ErrorSinkPlugin {
     }
 
     SortedMap<String, String> getLoadedPlugins();
+
+    default SortedMap<String, PlayerDetail> getOnlinePlayerLocation() {
+        return new TreeMap<>();
+    };
 
     String getServerVersion();
 

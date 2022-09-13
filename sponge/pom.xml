@@ -70,11 +70,6 @@
                             <pattern>io.sentry</pattern>
                             <shadedPattern>me.wiefferink.errorsink.shaded.sentry</shadedPattern>
                         </relocation>
-                        <!-- Relocate bstats -->
-                        <relocation>
-                            <pattern>org.bstats</pattern>
-                            <shadedPattern>me.wiefferink.errorsink.shaded.bstats</shadedPattern>
-                        </relocation>
                     </relocations>
                     <artifactSet>
                         <excludes>

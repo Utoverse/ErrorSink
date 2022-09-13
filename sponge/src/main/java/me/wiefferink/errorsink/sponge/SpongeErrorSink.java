@@ -200,5 +200,4 @@ public class SpongeErrorSink implements ErrorSinkPlugin {
     public void addExtraData(EventBuilder builder) {
         builder.withExtra("SpongeAPI", Sponge.getGame().getPlatform().getContainer(Platform.Component.API).getVersion().orElse("UNKNOWN-SPONGE-API"));
     }
-
 }
